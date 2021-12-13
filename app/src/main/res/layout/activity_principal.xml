@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityPrincipal">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/fondo3">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="INGRESE NOMBRE"
+                android:textColor="#FFF"
+                android:textAlignment="center"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/nombre"
+                android:hint="Nombre"
+
+                android:backgroundTint="@android:color/darker_gray"
+                android:textColorHint="@color/white"
+                android:textColor="#FFF"
+                android:textAlignment="center"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="INGRESE EQUIPO"
+                android:textColor="#FFF"
+                android:textAlignment="center"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/equipo"
+                android:hint="Equipo"
+
+                android:backgroundTint="@android:color/darker_gray"
+                android:textColorHint="@color/white"
+                android:textColor="#FFF"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="INGRESE FOTO"
+                android:textColor="#FFF"
+                android:textAlignment="center"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/foto"
+                android:hint="Foto"
+
+                android:backgroundTint="@android:color/darker_gray"
+                android:textColorHint="@color/white"
+                android:textColor="#FFF"
+                android:textAlignment="center"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/bt1"
+                android:text="Enviar Datos"
+                android:onClick="insercion"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ID"
+                android:textColor="#FFF"
+                android:textAlignment="center"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/id"
+                android:backgroundTint="@android:color/darker_gray"
+                android:hint="Ingrese Id"
+                android:textColorHint="@color/white"
+                android:textAlignment="center"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/bt2"
+                android:text="Buscar"
+                android:onClick="busqueda"
+                android:textAlignment="center"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/bt3"
+                android:text="Actualizar"
+                android:onClick="actualizacion"
+                android:textAlignment="center"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/bt4"
+                android:text="Eliminar"
+                android:onClick="eliminacion"
+                android:textAlignment="center"/>
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/lista"
+                android:textColorHint="@color/white"
+                android:cacheColorHint="@color/white"
+
+                android:backgroundTint="@android:color/darker_gray"
+                android:textColor="#FFF"
+                />
+
+
+        </LinearLayout>
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
